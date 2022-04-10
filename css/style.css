@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Syne+Mono&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin-top: 100px;
+  background-image:var(--background) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:root {
+  --background:url(../img/body.jpg) ;
+  --cont-color:  rgb(0 0 0 / 56%);;
+  --title-color: #cbac62;
+  --lite-color: #ffffff;
+  
+  --box-color: rgb(151 137 137 / 33%);;
+  --btn-color: rgba(7, 6, 6, 0.33);;
+  --btn-text-color:#cbac62;
+  --btn-1-color:#cbac62;
+  --text-color:#f8f6f2;
+}
+
+.dark {
+  --background:url(../img/bodyy.jpg) ;
+  --cont-color: rgb(223 181 53 / 50%);;
+  --title-color: #0a0101;
+  --box-color: rgb(151 137 137 / 33%);;
+  --btn-color: rgb(243, 243, 243);;
+  --btn-text-color:#fefeff;
+  --btn-color:#d10404;
+  --text-color:#fffefb;
+  --border-color:#da1616;
+  --lite-color: #000000;
+
+}
+.countier{
+
+  padding: 40px 20px;
+background: var(--cont-color);
+height: 577px;
+border-radius: 12px;
+width: 80%;
+}
+h1{
+  color: var(--title-color);
+  vertical-align:super;
+  text-align: center;
+  font-weight: 900;
+  font-size: 67px;
+  
+}
+form{
+display: flex;
+justify-content: center;
+}
+.todoInp{
+  padding: 7px;
+  background-color: var(--box-color);
+  border: 1px solid var(--border-color);;
+  outline: none;
+  color: var(--text-color);
+  width: 80%;
+}
+.todoBtn{
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border:1px solid var(--btn-1-color);
+  width: 150px;
+  margin-left: 10px;
+  
+}
+.todoBtn:hover {
+  text-shadow: 0 0 5px #ffffff80;
+  box-shadow: 0 0 8px 0 #ffffff50;
+  background: linear-gradient(to bottom, #1e2328, #433d2b);
+  cursor: pointer;
+  transition: 0.1s;
+}
+.cont{
+  margin:41px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cont div{
+  margin-top: 10px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.cont input{
+  padding: 7px;
+  background-color: var(--box-color);
+  border: 1px solid var(--border-color);;
+  color: var(--text-color);
+  text-align: center;
+  width: 64%;
+}
+.cont button{
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  border:1px solid var(--btn-text-color);
+  margin-left: 10px;
+}
+.cont button:hover {
+  text-shadow: 0 0 5px #ffffff80;
+  box-shadow: 0 0 8px 0 #ffffff50;
+  background: linear-gradient(to bottom, #1e2328, #433d2b);
+  cursor: pointer;
+  transition: 0.1s;
+}
+.cont i{
+  padding: 6px;
+}
+.inpTask{
+  outline:1px solid #f0e9e9;
+}
+.toggle-btn{
+  color: var(--lite-color);
+  font-size: 30px;
+}
